@@ -1,0 +1,13 @@
+<p>This is the admin view.</p>
+
+<button ng-click='addLink()'>New Link</button>
+
+<div ng-repeat='link in links'>
+
+  <label for="Href">Href</label><input type="text" name="Href" value="" id="Href" ng-model='link.href'>
+  <label for="Text">Text</label><input type="text" name="Text" value="" id="Text" ng-model='link.text'>
+
+  <button ng-click='removeLink($index)'>Delete</button>
+  <button ng-click='saveLink(link)'>Save</button>
+
+</div>
